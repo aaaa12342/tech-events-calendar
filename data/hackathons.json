@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-03 12:33",
+  "updated_at": "2026-10-04 13:04",
   "counts": {
-    "total": 201,
-    "scraped": 178,
+    "total": 200,
+    "scraped": 177,
     "manual": 8,
     "ranked": 20
   },
@@ -3393,23 +3393,6 @@
       "prize": 0,
       "prize_text": "",
       "url": "https://alidocs.dingtalk.com/notable/share/form/v01meonarbBYjQxrqXx_o30wW2l_Qoiznkb?source=link",
-      "source": "modelscope"
-    },
-    {
-      "id": "ms-354",
-      "name": "磐石·科学智能（AI for Science）实训营",
-      "org": "魔搭社区",
-      "category": "竞赛",
-      "city": "未知",
-      "online": false,
-      "venue": "",
-      "start": "",
-      "end": "",
-      "reg_deadline": "2026-09-03",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "",
-      "url": "https://modelscope.cn/competition/354",
       "source": "modelscope"
     },
     {
