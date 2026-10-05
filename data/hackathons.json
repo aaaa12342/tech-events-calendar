@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-04 13:04",
+  "updated_at": "2026-10-05 12:50",
   "counts": {
-    "total": 200,
-    "scraped": 177,
+    "total": 197,
+    "scraped": 174,
     "manual": 8,
     "ranked": 20
   },
@@ -695,23 +695,6 @@
       "source": "ai-pick"
     },
     {
-      "id": "aipick-2dc613fb56",
-      "name": "Decentraland Friendzone Mobile Buildathon",
-      "org": "Decentraland",
-      "category": "黑客松",
-      "city": "全球",
-      "online": true,
-      "venue": "",
-      "start": "2026-08-10",
-      "end": "2026-09-04",
-      "reg_deadline": "2026-09-04",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "$8,000 MANA 奖池（冠军$3K MANA）+ 前50名$30周边券 + 徽章 + 移动端Discover曝光",
-      "url": "https://dorahacks.io/hackathon/friendzone/detail",
-      "source": "ai-pick"
-    },
-    {
       "id": "aipick-07ae3a1dac",
       "name": "2026 AI杭州·码动未来 AI模型智能体创新大赛 — ¥21万 超级智能体/具身/时空三赛道",
       "org": "杭州余杭区/msup",
@@ -794,23 +777,6 @@
       "prize": 0,
       "prize_text": "$40,000现金池：冠军$25K/亚军$10K/季军$5K。Phase1在30分钟单芯片训练预算内最大化模型能力，Top10晋级Phase2获得完整Trn2服",
       "url": "https://trainium-frontier.devpost.com/",
-      "source": "ai-pick"
-    },
-    {
-      "id": "aipick-6b7b7f9be3",
-      "name": "Alpaca AI Trading Agents Hackathon — $5K AI交易Agent",
-      "org": "Alpaca + lablab.ai",
-      "category": "黑客松",
-      "city": "全球",
-      "online": true,
-      "venue": "",
-      "start": "2026-08-13",
-      "end": "2026-09-04",
-      "reg_deadline": "2026-09-05",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "Prize pool $5,000；用 Alpaca Trading API/MCP/CLI 构建 AI 交易 agent，纸面交易环境（模拟资金+真实行情），",
-      "url": "https://lablab.ai/ai-hackathons/alpaca-ai-trading-agents-hackathon",
       "source": "ai-pick"
     },
     {
@@ -2023,7 +1989,7 @@
     },
     {
       "id": "hdx-a933881111",
-      "name": "全球人工智能大会GAIC｜城市合伙人招募",
+      "name": "全球人工智能大会GAIC｜上海合伙人招募",
       "org": "",
       "category": "展会",
       "city": "上海",
@@ -2056,23 +2022,6 @@
       "source": "segmentfault"
     },
     {
-      "id": "hdx-87fc5452fd",
-      "name": "2026深圳智能机器人博览会（ROBOTECH 2026）",
-      "org": "",
-      "category": "展会",
-      "city": "深圳",
-      "online": false,
-      "venue": "",
-      "start": "2026-10-27",
-      "end": "",
-      "reg_deadline": "",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "",
-      "url": "https://www.huodongxing.com/event/9879506852300",
-      "source": "huodongxing"
-    },
-    {
       "id": "hdx-84fd5b4bbc",
       "name": "ROBOTECH 2026深圳智能机器人博览会",
       "org": "",
@@ -2087,6 +2036,23 @@
       "prize": 0,
       "prize_text": "",
       "url": "https://www.huodongxing.com/event/4879619386500",
+      "source": "huodongxing"
+    },
+    {
+      "id": "hdx-87fc5452fd",
+      "name": "2026深圳智能机器人博览会（ROBOTECH 2026）",
+      "org": "",
+      "category": "展会",
+      "city": "深圳",
+      "online": false,
+      "venue": "",
+      "start": "2026-10-27",
+      "end": "",
+      "reg_deadline": "",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://www.huodongxing.com/event/9879506852300",
       "source": "huodongxing"
     },
     {
@@ -3071,23 +3037,6 @@
       "notice_url": "http://www.gcxl.edu.cn/new/index.html",
       "ended": true,
       "source": "ranked"
-    },
-    {
-      "id": "aipick-caf1427d1e",
-      "name": "VoltHacks — IoT + AI Hackathon",
-      "org": "其他",
-      "category": "黑客松",
-      "city": "全球",
-      "online": true,
-      "venue": "",
-      "start": "",
-      "end": "2026-09-04",
-      "reg_deadline": "2026-09-05",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "$2,905 prize pool, 637 registrations",
-      "url": "https://volthacks.devpost.com/",
-      "source": "ai-pick"
     },
     {
       "id": "aipick-2097c28228",
