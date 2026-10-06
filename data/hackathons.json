@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-05 12:50",
+  "updated_at": "2026-10-06 13:37",
   "counts": {
     "total": 197,
     "scraped": 174,
@@ -746,23 +746,6 @@
       "source": "ai-pick"
     },
     {
-      "id": "aipick-66827bda7a",
-      "name": "Hack for Humanity Summer 2026 — AI健康主题线上Hackathon",
-      "org": "Hack for Humanity",
-      "category": "黑客松",
-      "city": "全球",
-      "online": true,
-      "venue": "",
-      "start": "2026-08-12",
-      "end": "2026-09-05",
-      "reg_deadline": "2026-09-05",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "$600现金+13个奖项类别；参与奖礼包(Wolfram 1个月/$50 Render credits/Miro 3个月/DevSwarm/MeDo credi",
-      "url": "https://hack-for-humanity-summer-26.devpost.com/",
-      "source": "ai-pick"
-    },
-    {
       "id": "aipick-d87f1b915a",
       "name": "AWS Trainium Frontier Competition — $40K Trainium2芯片级模型训练赛",
       "org": "AWS",
@@ -1256,23 +1239,6 @@
       "source": "huodongxing"
     },
     {
-      "id": "hdx-3746c9bcf1",
-      "name": "杭州AIGC生成式人工智能定向就业7天免费听",
-      "org": "",
-      "category": "会议",
-      "city": "杭州",
-      "online": false,
-      "venue": "",
-      "start": "2026-09-21",
-      "end": "",
-      "reg_deadline": "",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "",
-      "url": "https://www.huodongxing.com/event/8876253435000",
-      "source": "huodongxing"
-    },
-    {
       "id": "manual-yunqi-2026",
       "name": "2026 云栖大会（Apsara Conference）",
       "org": "阿里云",
@@ -1460,6 +1426,23 @@
       "source": "huodongxing"
     },
     {
+      "id": "hdx-99dc69615c",
+      "name": "官宣｜人工智能工商管理博士（DBA in AI）",
+      "org": "",
+      "category": "会议",
+      "city": "上海",
+      "online": false,
+      "venue": "",
+      "start": "2026-10-06",
+      "end": "",
+      "reg_deadline": "",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://www.huodongxing.com/event/5881529015711",
+      "source": "huodongxing"
+    },
+    {
       "id": "hdx-36978fab42",
       "name": "机器人足球科创公益课10月6日",
       "org": "",
@@ -1477,20 +1460,20 @@
       "source": "huodongxing"
     },
     {
-      "id": "hdx-1010f2c805",
-      "name": "给toB_AI的人工智能落地通识沙龙 - AI 时代的 OCR",
+      "id": "hdx-60d655938a",
+      "name": "2026【千投万创】“硬科技+人工智能”秋季专场线上路演！",
       "org": "",
       "category": "会议",
-      "city": "上海",
-      "online": false,
+      "city": "线上活动",
+      "online": true,
       "venue": "",
-      "start": "2026-10-09",
+      "start": "2026-10-08",
       "end": "",
       "reg_deadline": "",
       "fee": "",
       "prize": 0,
       "prize_text": "",
-      "url": "https://www.huodongxing.com/event/3879835339800",
+      "url": "https://www.huodongxing.com/event/2872632887222",
       "source": "huodongxing"
     },
     {
@@ -1543,6 +1526,23 @@
       "prize_text": "",
       "url": "https://m.saikr.com/vse/Java202601",
       "source": "saikr"
+    },
+    {
+      "id": "hdx-cbffaee63b",
+      "name": "WorkBuddy大模型应用工程化开发者论坛",
+      "org": "",
+      "category": "会议",
+      "city": "上海",
+      "online": false,
+      "venue": "",
+      "start": "2026-10-11",
+      "end": "",
+      "reg_deadline": "",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://www.huodongxing.com/event/7881634698600",
+      "source": "huodongxing"
     },
     {
       "id": "hdx-d563e117ef",
