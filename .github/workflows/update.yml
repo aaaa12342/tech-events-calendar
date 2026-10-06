@@ -18,6 +18,13 @@ jobs:
         with:
           python-version: '3.11'
 
+      - name: Run regression tests
+        run: |
+          python -B -m unittest discover -s tests -v
+          node tests/event-status.test.js
+          node tests/event-view.test.js
+          node tests/page-controls.test.js
+
       - name: Run scraper
         run: python scraper/scraper.py
 

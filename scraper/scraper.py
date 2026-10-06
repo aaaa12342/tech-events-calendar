@@ -22,6 +22,7 @@ import os
 import re
 import ssl
 import sys
+import tempfile
 import urllib.parse
 import urllib.request
 from datetime import datetime, timedelta, timezone
@@ -108,9 +109,8 @@ def parse_date(v):
 
 
 def is_recent(e):
-    """结束/截止/开始日期过老的活动不再保留"""
-    dd = None
-    for key in ('end', 'reg_deadline', 'start'):
+    """优先使用活动结束日期；报名截止不能覆盖仍有效的活动时间。"""
+    for key in ('end', 'start', 'reg_deadline'):
         v = e.get(key) or ''
         if not v:
             continue
@@ -118,14 +118,10 @@ def is_recent(e):
             d = datetime.strptime(v, '%Y-%m-%d').date()
         except ValueError:
             continue
-        if key == 'start':
-            dd = d  # 开始日期仅在有截止/结束信息时才允许久远（长周期活动）
-            continue
-        if d < TODAY - timedelta(days=30):
-            return False
-    # 单日活动：开始超过 30 天且无截止/结束信息，视为过期
-    if dd and dd < TODAY - timedelta(days=30) and not (e.get('end') or e.get('reg_deadline')):
-        return False
+        # 无结束日期但有报名信息时，不能推断活动已经结束。
+        if key == 'start' and e.get('reg_deadline'):
+            return True
+        return d >= TODAY - timedelta(days=30)
     return True
 
 
@@ -284,11 +280,8 @@ def fetch_modelscope():
     """魔搭社区比赛/活动 API，按关键词过滤出黑客松类"""
     out, seen = [], set()
     for page in (1, 2, 3):
-        try:
-            data = json.loads(http_get(
-                'https://modelscope.cn/api/v1/competitions?pageNumber=%d' % page))
-        except Exception:
-            break
+        data = json.loads(http_get(
+            'https://modelscope.cn/api/v1/competitions?pageNumber=%d' % page))
         races = (data.get('Data') or {}).get('Races') or []
         if not races:
             break
@@ -440,16 +433,10 @@ def fetch_saikr():
     """赛氪竞赛广场（移动版 SSR + 分页接口），保留 AI/计算机类近期竞赛"""
     out, seen = [], set()
     html_pages = []
-    try:
-        html_pages.append(http_get('https://m.saikr.com/vs'))
-    except Exception:
-        pass
+    html_pages.append(http_get('https://m.saikr.com/vs'))
     for page in (2, 3, 4, 5):
-        try:
-            data = json.loads(http_get('https://m.saikr.com/vs/ajaxGetList?page=%d' % page))
-            html_pages.append((data.get('data') or {}).get('list') or '')
-        except Exception:
-            break
+        data = json.loads(http_get('https://m.saikr.com/vs/ajaxGetList?page=%d' % page))
+        html_pages.append((data.get('data') or {}).get('list') or '')
     for page_html in html_pages:
         for e in _fetch_saikr_page(page_html):
             if e['id'] in seen:
@@ -604,18 +591,85 @@ def merge(source_results, manual, ranked=None):
     return sorted(out.values(), key=lambda e: (e.get('start') or '9999'))
 
 
+def validate_events(events):
+    if not isinstance(events, list):
+        raise ValueError('活动数据必须为数组')
+    seen = set()
+    for e in events:
+        if not isinstance(e, dict):
+            raise ValueError('活动必须为对象')
+        for key in ('id', 'name', 'source', 'url'):
+            if not isinstance(e.get(key), str) or not e[key].strip():
+                raise ValueError('活动缺少字段: %s' % key)
+        if e['id'] in seen:
+            raise ValueError('重复活动 ID: %s' % e['id'])
+        seen.add(e['id'])
+        for key in ('start', 'end', 'reg_deadline'):
+            if e.get(key):
+                datetime.strptime(e[key], '%Y-%m-%d')
+        if e.get('start') and e.get('end') and e['start'] > e['end']:
+            raise ValueError('活动开始日期晚于结束日期: %s' % e['id'])
+
+
+def atomic_write(result):
+    validate_events(result['events'])
+    os.makedirs(DATA_DIR, exist_ok=True)
+    path = None
+    try:
+        with tempfile.NamedTemporaryFile(mode='w', encoding='utf-8',
+                                         dir=DATA_DIR, delete=False) as f:
+            path = f.name
+            json.dump(result, f, ensure_ascii=False, indent=2)
+            f.flush()
+            os.fsync(f.fileno())
+        os.replace(path, OUTPUT_FILE)
+    finally:
+        if path and os.path.exists(path):
+            os.unlink(path)
+
+
 def main():
     dry_run = '--dry-run' in sys.argv
 
-    source_results, errors = [], []
+    old = {}
+    if os.path.exists(OUTPUT_FILE):
+        with open(OUTPUT_FILE, encoding='utf-8') as f:
+            old = json.load(f)
+    # 老版本首次运行时，从合并数据恢复来源缓存。
+    cache = dict(old.get('source_cache') or {})
+    source_status = {}
+    previous_status = old.get('source_status') or {}
+    attempted_at = datetime.now(TZ_BEIJING).strftime('%Y-%m-%d %H:%M')
+    for name, _fn in SOURCES:
+        cache.setdefault(name, [e for e in old.get('events', []) if e.get('source') == name])
+
+    source_results, errors, successful = [], [], 0
     for name, fn in SOURCES:
         try:
             items = fn()
+            validate_events(items)
+            if any(e['source'] != name for e in items):
+                raise ValueError('来源字段与抓取源不一致')
+            if not items and cache.get(name):
+                raise ValueError('来源返回零条，保留缓存等待确认')
+            cache[name] = items
+            successful += 1
+            source_status[name] = {'status': 'ok', 'last_success_at': datetime.now(TZ_BEIJING).strftime('%Y-%m-%d %H:%M'),
+                                   'attempted_at': attempted_at, 'count': len(items)}
             source_results.append((name, items))
             print('[OK] %s: %d 条' % (name, len(items)))
         except Exception as e:
             errors.append('%s: %s: %s' % (name, type(e).__name__, e))
             print('[FAIL] %s -> %s: %s' % (name, type(e).__name__, e))
+            fallback = [e for e in cache.get(name, []) if is_recent(e)]
+            source_results.append((name, fallback))
+            source_status[name] = {'status': 'cached' if fallback else 'failed',
+                                   'last_success_at': previous_status.get(name, {}).get('last_success_at'),
+                                   'attempted_at': attempted_at, 'count': len(fallback)}
+
+    if not successful:
+        print('[ERROR] 所有抓取源均失败，未改写输出文件')
+        sys.exit(1)
 
     manual = []
     if os.path.exists(MANUAL_FILE):
@@ -645,6 +699,8 @@ def main():
             'ranked': len(ranked),
         },
         'errors': errors,
+        'source_cache': cache,
+        'source_status': source_status,
         'events': merged,
     }
 
@@ -655,17 +711,9 @@ def main():
         print('共 %d 条' % len(merged))
         return
 
-    os.makedirs(DATA_DIR, exist_ok=True)
-    with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
-        json.dump(result, f, ensure_ascii=False, indent=2)
+    atomic_write(result)
     print('[DONE] 写入 %s，共 %d 条（抓取 %d + 榜单 %d + 手动 %d）' % (
         OUTPUT_FILE, result['counts']['total'], result['counts']['scraped'], len(ranked), len(manual)))
-
-    # 抓取源全部失败时退出码非 0，让 CI 能感知（但不阻断——保留旧数据）
-    if errors and not source_results:
-        print('[ERROR] 所有抓取源均失败')
-        sys.exit(1)
-
 
 if __name__ == '__main__':
     main()
