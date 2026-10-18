@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-17 11:40",
+  "updated_at": "2026-10-18 11:47",
   "counts": {
-    "total": 233,
-    "scraped": 207,
+    "total": 228,
+    "scraped": 202,
     "manual": 8,
     "ranked": 20
   },
@@ -843,23 +843,6 @@
         "source": "ai-pick"
       },
       {
-        "id": "aipick-4e3272c491",
-        "name": "安克创新 Anker 首届黑客松挑战赛",
-        "org": "安克创新 Anker",
-        "category": "黑客松",
-        "city": "中国",
-        "online": false,
-        "venue": "",
-        "start": "2026-09-07",
-        "end": "2026-09-27",
-        "reg_deadline": "2026-09-27",
-        "fee": "",
-        "prize": 0,
-        "prize_text": "",
-        "url": "https://career.anker.com.cn/hackathon/",
-        "source": "ai-pick"
-      },
-      {
         "id": "aipick-05483799d5",
         "name": "蚂蚁灵波具身大模型挑战赛",
         "org": "ModelScope",
@@ -885,8 +868,8 @@
         "online": false,
         "venue": "",
         "start": "2026-10-10",
-        "end": "2026-10-20",
-        "reg_deadline": "2026-10-20",
+        "end": "2026-11-10",
+        "reg_deadline": "2026-11-10",
         "fee": "",
         "prize": 0,
         "prize_text": "",
@@ -1061,6 +1044,23 @@
         "prize": 0,
         "prize_text": "",
         "url": "https://events.waytoagi.com/events/AI%20%E5%88%87%E7%A3%8B%E5%A4%A7%E4%BC%9A%20%C2%B7%20%E6%B9%9B%E6%B1%9F%20%C2%B7%20%E8%9E%8D%E5%88%9B%E7%A9%BA%E9%97%B4%EF%BC%88%E5%8D%8E%E7%9B%9B%E6%96%B0%E5%9F%8E%E5%BA%97%EF%BC%89-e_ac2065405f",
+        "source": "ai-pick"
+      },
+      {
+        "id": "aipick-151edc660c",
+        "name": "AI 切磋大会 · 邯郸 · 邯郸科创产业园",
+        "org": "WaytoAGI",
+        "category": "黑客松",
+        "city": "中国",
+        "online": false,
+        "venue": "",
+        "start": "2026-10-24",
+        "end": "2026-10-25",
+        "reg_deadline": "2026-10-25",
+        "fee": "",
+        "prize": 0,
+        "prize_text": "",
+        "url": "https://events.waytoagi.com/events/AI%20%E5%88%87%E7%A3%8B%E5%A4%A7%E4%BC%9A%20%C2%B7%20%E9%82%AF%E9%83%B8%20%C2%B7%20%E9%82%AF%E9%83%B8%E7%A7%91%E5%88%9B%E4%BA%A7%E4%B8%9A%E5%9B%AD-e_9a415a18f9",
         "source": "ai-pick"
       },
       {
@@ -1676,40 +1676,6 @@
         "source": "ai-pick"
       },
       {
-        "id": "aipick-ddb83b4c5a",
-        "name": "2026 AI搜索与企业增长大会",
-        "org": "WaytoAGI 社区",
-        "category": "会议",
-        "city": "中国",
-        "online": false,
-        "venue": "",
-        "start": "2026-10-17",
-        "end": "2026-10-17",
-        "reg_deadline": "2026-10-17",
-        "fee": "",
-        "prize": 0,
-        "prize_text": "",
-        "url": "https://events.contentdance.com/ai-search-2026",
-        "source": "ai-pick"
-      },
-      {
-        "id": "aipick-3240222ef5",
-        "name": "第六届HiPM产品创新力峰会",
-        "org": "WaytoAGI 社区",
-        "category": "会议",
-        "city": "中国",
-        "online": false,
-        "venue": "",
-        "start": "2026-10-16",
-        "end": "2026-10-17",
-        "reg_deadline": "2026-10-17",
-        "fee": "",
-        "prize": 0,
-        "prize_text": "",
-        "url": "https://hipm.msup.com.cn/2026/home?aid=4950&qd=4G326fLI",
-        "source": "ai-pick"
-      },
-      {
         "id": "aipick-585a0d2bcb",
         "name": "麦当劳程序员创意开发大赛",
         "org": "麦当劳 × WorkBuddy",
@@ -1967,8 +1933,8 @@
         "source": "huodongxing"
       },
       {
-        "id": "hdx-019b4c9229",
-        "name": "GAIC 全球人工智能大会 · AI电商主题论坛",
+        "id": "hdx-cdfc87aec5",
+        "name": "GAIC 全球人工智能大会项目路演（杭州站）",
         "org": "",
         "category": "展会",
         "city": "杭州",
@@ -1980,7 +1946,7 @@
         "fee": "",
         "prize": 0,
         "prize_text": "",
-        "url": "https://www.huodongxing.com/event/8876222089200",
+        "url": "https://www.huodongxing.com/event/7882503344100",
         "source": "huodongxing"
       },
       {
@@ -2001,8 +1967,8 @@
         "source": "huodongxing"
       },
       {
-        "id": "hdx-cdfc87aec5",
-        "name": "GAIC 全球人工智能大会项目路演（杭州站）",
+        "id": "hdx-019b4c9229",
+        "name": "GAIC 全球人工智能大会 · AI电商主题论坛",
         "org": "",
         "category": "展会",
         "city": "杭州",
@@ -2014,7 +1980,7 @@
         "fee": "",
         "prize": 0,
         "prize_text": "",
-        "url": "https://www.huodongxing.com/event/7882503344100",
+        "url": "https://www.huodongxing.com/event/8876222089200",
         "source": "huodongxing"
       },
       {
@@ -2120,23 +2086,6 @@
         "source": "huodongxing"
       },
       {
-        "id": "hdx-e70d330fb5",
-        "name": "中东人工智能博览会（MAIE）暨2026 XAIR 大会中东分会",
-        "org": "",
-        "category": "展会",
-        "city": "阿联酋",
-        "online": false,
-        "venue": "",
-        "start": "2026-12-15",
-        "end": "",
-        "reg_deadline": "",
-        "fee": "",
-        "prize": 0,
-        "prize_text": "",
-        "url": "https://www.huodongxing.com/event/4879759378200",
-        "source": "huodongxing"
-      },
-      {
         "id": "hdx-5d452c2ebf",
         "name": "GAIC 全球人工智能大会 · AI影视主题论坛（深圳站）",
         "org": "",
@@ -2151,6 +2100,23 @@
         "prize": 0,
         "prize_text": "",
         "url": "https://www.huodongxing.com/event/7882085617000",
+        "source": "huodongxing"
+      },
+      {
+        "id": "hdx-e70d330fb5",
+        "name": "中东人工智能博览会（MAIE）暨2026 XAIR 大会中东分会",
+        "org": "",
+        "category": "展会",
+        "city": "阿联酋",
+        "online": false,
+        "venue": "",
+        "start": "2026-12-15",
+        "end": "",
+        "reg_deadline": "",
+        "fee": "",
+        "prize": 0,
+        "prize_text": "",
+        "url": "https://www.huodongxing.com/event/4879759378200",
         "source": "huodongxing"
       },
       {
@@ -2236,23 +2202,6 @@
         "prize": 0,
         "prize_text": "",
         "url": "https://www.huodongxing.com/event/2882229214400",
-        "source": "huodongxing"
-      },
-      {
-        "id": "hdx-76433a84e3",
-        "name": "进迭时空开发者大会 2026",
-        "org": "",
-        "category": "展会",
-        "city": "深圳",
-        "online": false,
-        "venue": "",
-        "start": "2026-10-17",
-        "end": "",
-        "reg_deadline": "",
-        "fee": "",
-        "prize": 0,
-        "prize_text": "",
-        "url": "https://www.huodongxing.com/event/7880793670900",
         "source": "huodongxing"
       },
       {
@@ -2355,23 +2304,6 @@
         "prize": 0,
         "prize_text": "",
         "url": "https://www.huodongxing.com/event/4883092330300",
-        "source": "huodongxing"
-      },
-      {
-        "id": "hdx-6b6a74b78f",
-        "name": "AI+制造-具身智能机器人产业落地应用论坛",
-        "org": "",
-        "category": "会议",
-        "city": "浙江温州",
-        "online": false,
-        "venue": "",
-        "start": "2026-10-17",
-        "end": "",
-        "reg_deadline": "",
-        "fee": "",
-        "prize": 0,
-        "prize_text": "",
-        "url": "https://www.huodongxing.com/event/9879934301700",
         "source": "huodongxing"
       },
       {
@@ -2970,6 +2902,23 @@
         "source": "huodongxing"
       },
       {
+        "id": "hdx-40d0631838",
+        "name": "第七届热管理产业大会暨博览会-消费电子&数据中心&新能源及储能热管理",
+        "org": "",
+        "category": "展会",
+        "city": "深圳",
+        "online": false,
+        "venue": "",
+        "start": "2026-12-02",
+        "end": "",
+        "reg_deadline": "",
+        "fee": "",
+        "prize": 0,
+        "prize_text": "",
+        "url": "https://www.huodongxing.com/event/3883291969700",
+        "source": "huodongxing"
+      },
+      {
         "id": "hdx-91d7eee43b",
         "name": "\"数创引擎计划\"大数据全面监管时代 企业财税合规风控主题培训",
         "org": "",
@@ -3317,7 +3266,7 @@
     "saikr": [
       {
         "id": "saikr-01ceae1b2d",
-        "name": "2026华智·高校大学生人工智能大赛",
+        "name": "【今日开考】2026华智·高校大学生人工智能大赛",
         "org": "",
         "category": "竞赛",
         "city": "线上",
@@ -3418,40 +3367,6 @@
         "source": "saikr"
       },
       {
-        "id": "saikr-1cf0eb4e92",
-        "name": "本周末即将开考+赛后5天领证书【AI机器人素养赛道】",
-        "org": "",
-        "category": "竞赛",
-        "city": "线上",
-        "online": true,
-        "venue": "",
-        "start": "2026-10-17",
-        "end": "2026-10-18",
-        "reg_deadline": "2026-10-17",
-        "fee": "",
-        "prize": 0,
-        "prize_text": "",
-        "url": "https://m.saikr.com/vse/2026CSoIaGAI03",
-        "source": "saikr"
-      },
-      {
-        "id": "saikr-88ba74ad2a",
-        "name": "2026 “AI生成世界”— AI图像图形技术创新大赛【算法编程赛道】",
-        "org": "",
-        "category": "竞赛",
-        "city": "线上",
-        "online": true,
-        "venue": "",
-        "start": "2026-10-18",
-        "end": "2026-10-18",
-        "reg_deadline": "2026-10-17",
-        "fee": "",
-        "prize": 0,
-        "prize_text": "",
-        "url": "https://m.saikr.com/vse/2026CSoIaGAI04",
-        "source": "saikr"
-      },
-      {
         "id": "saikr-f1d4a6cb14",
         "name": "【本周开考！90分即可领取一等奖证书】计算机网络赛道",
         "org": "",
@@ -3470,7 +3385,7 @@
       },
       {
         "id": "saikr-1efb92d285",
-        "name": "【周六周日任选10分钟参赛+90分以上全部一等奖】“大学生人工智能竞答大赛",
+        "name": "【现在报名正在考试+90分以上全部一等奖】“大学生人工智能竞答大赛",
         "org": "",
         "category": "竞赛",
         "city": "线上",
@@ -3542,38 +3457,38 @@
   "source_status": {
     "ai-pick": {
       "status": "ok",
-      "last_success_at": "2026-10-17 11:40",
-      "attempted_at": "2026-10-17 11:40",
-      "count": 109
+      "last_success_at": "2026-10-18 11:46",
+      "attempted_at": "2026-10-18 11:46",
+      "count": 107
     },
     "huodongxing": {
       "status": "ok",
-      "last_success_at": "2026-10-17 11:40",
-      "attempted_at": "2026-10-17 11:40",
-      "count": 68
+      "last_success_at": "2026-10-18 11:46",
+      "attempted_at": "2026-10-18 11:46",
+      "count": 67
     },
     "modelscope": {
       "status": "ok",
-      "last_success_at": "2026-10-17 11:40",
-      "attempted_at": "2026-10-17 11:40",
+      "last_success_at": "2026-10-18 11:47",
+      "attempted_at": "2026-10-18 11:46",
       "count": 10
     },
     "segmentfault": {
       "status": "ok",
-      "last_success_at": "2026-10-17 11:40",
-      "attempted_at": "2026-10-17 11:40",
+      "last_success_at": "2026-10-18 11:47",
+      "attempted_at": "2026-10-18 11:46",
       "count": 7
     },
     "saikr": {
       "status": "ok",
-      "last_success_at": "2026-10-17 11:40",
-      "attempted_at": "2026-10-17 11:40",
-      "count": 13
+      "last_success_at": "2026-10-18 11:47",
+      "attempted_at": "2026-10-18 11:46",
+      "count": 11
     },
     "rosedu": {
       "status": "ok",
-      "last_success_at": "2026-10-17 11:40",
-      "attempted_at": "2026-10-17 11:40",
+      "last_success_at": "2026-10-18 11:47",
+      "attempted_at": "2026-10-18 11:46",
       "count": 0
     }
   },
@@ -4384,23 +4299,6 @@
       "source": "manual"
     },
     {
-      "id": "aipick-4e3272c491",
-      "name": "安克创新 Anker 首届黑客松挑战赛",
-      "org": "安克创新 Anker",
-      "category": "黑客松",
-      "city": "中国",
-      "online": false,
-      "venue": "",
-      "start": "2026-09-07",
-      "end": "2026-09-27",
-      "reg_deadline": "2026-09-27",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "",
-      "url": "https://career.anker.com.cn/hackathon/",
-      "source": "ai-pick"
-    },
-    {
       "id": "aipick-78e1b6f2e8",
       "name": "Google AI Builder Cup 2026",
       "org": "Google Cloud",
@@ -4647,8 +4545,8 @@
       "online": false,
       "venue": "",
       "start": "2026-10-10",
-      "end": "2026-10-20",
-      "reg_deadline": "2026-10-20",
+      "end": "2026-11-10",
+      "reg_deadline": "2026-11-10",
       "fee": "",
       "prize": 0,
       "prize_text": "",
@@ -4707,23 +4605,6 @@
       "source": "manual"
     },
     {
-      "id": "aipick-3240222ef5",
-      "name": "第六届HiPM产品创新力峰会",
-      "org": "WaytoAGI 社区",
-      "category": "会议",
-      "city": "中国",
-      "online": false,
-      "venue": "",
-      "start": "2026-10-16",
-      "end": "2026-10-17",
-      "reg_deadline": "2026-10-17",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "",
-      "url": "https://hipm.msup.com.cn/2026/home?aid=4950&qd=4G326fLI",
-      "source": "ai-pick"
-    },
-    {
       "id": "hdx-ef0a04809b",
       "name": "2026CSDI SUMMIT  中国软件研发智能创新科技峰会",
       "org": "",
@@ -4776,74 +4657,6 @@
       "source": "ranked"
     },
     {
-      "id": "aipick-ddb83b4c5a",
-      "name": "2026 AI搜索与企业增长大会",
-      "org": "WaytoAGI 社区",
-      "category": "会议",
-      "city": "中国",
-      "online": false,
-      "venue": "",
-      "start": "2026-10-17",
-      "end": "2026-10-17",
-      "reg_deadline": "2026-10-17",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "",
-      "url": "https://events.contentdance.com/ai-search-2026",
-      "source": "ai-pick"
-    },
-    {
-      "id": "hdx-76433a84e3",
-      "name": "进迭时空开发者大会 2026",
-      "org": "",
-      "category": "展会",
-      "city": "深圳",
-      "online": false,
-      "venue": "",
-      "start": "2026-10-17",
-      "end": "",
-      "reg_deadline": "",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "",
-      "url": "https://www.huodongxing.com/event/7880793670900",
-      "source": "huodongxing"
-    },
-    {
-      "id": "hdx-6b6a74b78f",
-      "name": "AI+制造-具身智能机器人产业落地应用论坛",
-      "org": "",
-      "category": "会议",
-      "city": "浙江温州",
-      "online": false,
-      "venue": "",
-      "start": "2026-10-17",
-      "end": "",
-      "reg_deadline": "",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "",
-      "url": "https://www.huodongxing.com/event/9879934301700",
-      "source": "huodongxing"
-    },
-    {
-      "id": "saikr-1cf0eb4e92",
-      "name": "本周末即将开考+赛后5天领证书【AI机器人素养赛道】",
-      "org": "",
-      "category": "竞赛",
-      "city": "线上",
-      "online": true,
-      "venue": "",
-      "start": "2026-10-17",
-      "end": "2026-10-18",
-      "reg_deadline": "2026-10-17",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "",
-      "url": "https://m.saikr.com/vse/2026CSoIaGAI03",
-      "source": "saikr"
-    },
-    {
       "id": "saikr-f1d4a6cb14",
       "name": "【本周开考！90分即可领取一等奖证书】计算机网络赛道",
       "org": "",
@@ -4862,7 +4675,7 @@
     },
     {
       "id": "saikr-1efb92d285",
-      "name": "【周六周日任选10分钟参赛+90分以上全部一等奖】“大学生人工智能竞答大赛",
+      "name": "【现在报名正在考试+90分以上全部一等奖】“大学生人工智能竞答大赛",
       "org": "",
       "category": "竞赛",
       "city": "线上",
@@ -4896,7 +4709,7 @@
     },
     {
       "id": "saikr-01ceae1b2d",
-      "name": "2026华智·高校大学生人工智能大赛",
+      "name": "【今日开考】2026华智·高校大学生人工智能大赛",
       "org": "",
       "category": "竞赛",
       "city": "线上",
@@ -4926,23 +4739,6 @@
       "prize": 0,
       "prize_text": "",
       "url": "https://m.saikr.com/vse/59954",
-      "source": "saikr"
-    },
-    {
-      "id": "saikr-88ba74ad2a",
-      "name": "2026 “AI生成世界”— AI图像图形技术创新大赛【算法编程赛道】",
-      "org": "",
-      "category": "竞赛",
-      "city": "线上",
-      "online": true,
-      "venue": "",
-      "start": "2026-10-18",
-      "end": "2026-10-18",
-      "reg_deadline": "2026-10-17",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "",
-      "url": "https://m.saikr.com/vse/2026CSoIaGAI04",
       "source": "saikr"
     },
     {
@@ -5182,6 +4978,23 @@
       "prize_text": "",
       "url": "https://m.saikr.com/vse/bigdata2026",
       "source": "saikr"
+    },
+    {
+      "id": "aipick-151edc660c",
+      "name": "AI 切磋大会 · 邯郸 · 邯郸科创产业园",
+      "org": "WaytoAGI",
+      "category": "黑客松",
+      "city": "中国",
+      "online": false,
+      "venue": "",
+      "start": "2026-10-24",
+      "end": "2026-10-25",
+      "reg_deadline": "2026-10-25",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://events.waytoagi.com/events/AI%20%E5%88%87%E7%A3%8B%E5%A4%A7%E4%BC%9A%20%C2%B7%20%E9%82%AF%E9%83%B8%20%C2%B7%20%E9%82%AF%E9%83%B8%E7%A7%91%E5%88%9B%E4%BA%A7%E4%B8%9A%E5%9B%AD-e_9a415a18f9",
+      "source": "ai-pick"
     },
     {
       "id": "aipick-a6411c184e",
@@ -6459,23 +6272,6 @@
       "source": "huodongxing"
     },
     {
-      "id": "hdx-019b4c9229",
-      "name": "GAIC 全球人工智能大会 · AI电商主题论坛",
-      "org": "",
-      "category": "展会",
-      "city": "杭州",
-      "online": false,
-      "venue": "",
-      "start": "2026-11-19",
-      "end": "",
-      "reg_deadline": "",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "",
-      "url": "https://www.huodongxing.com/event/8876222089200",
-      "source": "huodongxing"
-    },
-    {
       "id": "hdx-cdfc87aec5",
       "name": "GAIC 全球人工智能大会项目路演（杭州站）",
       "org": "",
@@ -6490,6 +6286,23 @@
       "prize": 0,
       "prize_text": "",
       "url": "https://www.huodongxing.com/event/7882503344100",
+      "source": "huodongxing"
+    },
+    {
+      "id": "hdx-019b4c9229",
+      "name": "GAIC 全球人工智能大会 · AI电商主题论坛",
+      "org": "",
+      "category": "展会",
+      "city": "杭州",
+      "online": false,
+      "venue": "",
+      "start": "2026-11-19",
+      "end": "",
+      "reg_deadline": "",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://www.huodongxing.com/event/8876222089200",
       "source": "huodongxing"
     },
     {
@@ -6660,6 +6473,23 @@
       "prize": 0,
       "prize_text": "",
       "url": "https://www.huodongxing.com/event/6855860710600",
+      "source": "huodongxing"
+    },
+    {
+      "id": "hdx-40d0631838",
+      "name": "第七届热管理产业大会暨博览会-消费电子&数据中心&新能源及储能热管理",
+      "org": "",
+      "category": "展会",
+      "city": "深圳",
+      "online": false,
+      "venue": "",
+      "start": "2026-12-02",
+      "end": "",
+      "reg_deadline": "",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://www.huodongxing.com/event/3883291969700",
       "source": "huodongxing"
     },
     {
