@@ -4,152 +4,54 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>科技活动日历</title>
-<style>
-:root {
-  --surface: #ffffff;
-  --surface-muted: #f4f4f6;
-  --bg: #f7f7f8;
-  --text: #171717;
-  --text-muted: #52525b;
-  --border: rgba(23, 23, 23, 0.12);
-  --brand: #4b3fe3;
-  --brand-soft: #f2f7ff;
-  --brand-soft-strong: #e5eaff;
-  --brand-text: #1a1759;
-  --brand-on: #ffffff;
-  --success: #1dc981;
-  --danger: #e8463a;
-  --radius: 8px;
-  --radius-card: 12px;
-  --radius-full: 999px;
-  --font-sans: "SF Pro Text", "PingFang SC", "Microsoft YaHei", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --surface: #1e1e20;
-    --surface-muted: #2a2a2d;
-    --bg: #171717;
-    --text: #e5e5e5;
-    --text-muted: #a1a1aa;
-    --border: rgba(229, 229, 229, 0.14);
-    --brand: #6054f1;
-    --brand-soft: #1a1759;
-    --brand-soft-strong: #3c2eca;
-    --brand-text: #cfd8ff;
-  }
-}
-* { box-sizing: border-box; }
-body {
-  margin: 0;
-  background: var(--bg);
-  color: var(--text);
-  font: 400 14px/20px var(--font-sans);
-}
-.wrap { max-width: 960px; margin: 0 auto; padding: 24px 16px 48px; }
-
-/* 顶栏 */
-.head { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; padding: 4px 4px 12px; }
-.title { font: 600 20px/28px var(--font-sans); }
-.sub { font-size: 12px; line-height: 18px; color: var(--text-muted); margin-top: 2px; }
-.city-pick { display: flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 500; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-full); padding: 4px 12px; }
-.city-pick select { border: none; background: transparent; color: var(--text); font: 500 12px/18px var(--font-sans); outline: none; cursor: pointer; }
-
-/* 筛选与排序 */
-.toolbar { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; padding: 8px 0 12px; }
-.tags { display: flex; gap: 8px; flex-wrap: wrap; }
-.pill { font: 500 12px/18px var(--font-sans); color: var(--text-muted); background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-full); padding: 4px 12px; cursor: pointer; transition: all .1s; }
-.pill:hover { border-color: var(--brand); color: var(--brand); }
-.pill.on { background: var(--brand-soft-strong); border-color: var(--brand); color: var(--brand-text); }
-.seg { display: flex; gap: 4px; background: var(--surface-muted); border-radius: var(--radius); padding: 4px; }
-.seg button { font: 500 12px/18px var(--font-sans); color: var(--text-muted); background: transparent; border: none; border-radius: var(--radius); padding: 4px 12px; cursor: pointer; }
-.seg button.on { background: var(--surface); color: var(--text); box-shadow: 0 1px 2px rgba(0,0,0,.1); }
-.filters { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin: 8px 0 12px; }
-.search { display: flex; flex: 1 1 280px; align-items: center; gap: 8px; }
-.search input { flex: 1; min-width: 0; }
-.filters input[type="search"], .filters select { min-height: 44px; padding: 8px 12px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); color: var(--text); font: inherit; }
-.check { display: flex; align-items: center; min-height: 44px; gap: 6px; cursor: pointer; }
-.check input { width: 18px; height: 18px; accent-color: var(--brand); }
-.plain-btn { min-height: 44px; padding: 8px 12px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); color: var(--text); font: inherit; cursor: pointer; }
-button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible { outline: 2px solid var(--brand); outline-offset: 3px; }
-.pill, .seg button, .city-pick select { min-height: 44px; }
-.update { padding: 12px 16px; margin-bottom: 12px; border: 1px solid var(--border); border-radius: var(--radius-card); background: var(--surface); color: var(--text-muted); }
-.update.warn { border-color: var(--danger); }
-.update p { margin: 0 0 6px; }
-.update summary { cursor: pointer; min-height: 44px; display: list-item; padding-top: 12px; }
-.update ul { margin: 8px 0; padding-left: 20px; }
-.source-note { font-size: 12px; }
-
-/* 列表 */
-.list { display: flex; flex-direction: column; gap: 8px; }
-.row { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-card); padding: 12px 16px; }
-.row.dim { opacity: .55; }
-.date { flex-shrink: 0; width: 54px; text-align: center; }
-.date .m { font-size: 12px; line-height: 16px; color: var(--text-muted); }
-.date .d { font: 600 18px/22px var(--font-sans); font-variant-numeric: tabular-nums; }
-.main { flex: 1; min-width: 0; }
-.name { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
-.name .n { font-weight: 500; overflow: hidden; text-overflow: ellipsis; }
-.badge { flex-shrink: 0; font-size: 12px; line-height: 18px; font-weight: 500; border-radius: var(--radius-full); padding: 0 8px; }
-.badge.open { color: var(--success); background: color-mix(in srgb, var(--success) 12%, transparent); }
-.badge.closing { color: var(--danger); background: color-mix(in srgb, var(--danger) 12%, transparent); }
-.badge.ongoing { color: var(--brand); background: var(--brand-soft); }
-.badge.todo, .badge.unknown { color: var(--text-muted); background: var(--surface-muted); }
-.badge.done { color: var(--text-muted); background: var(--surface-muted); }
-.meta { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-size: 12px; line-height: 18px; color: var(--text-muted); margin-top: 4px; }
-.meta .ddl-hot { color: var(--danger); font-weight: 500; }
-.chip { font-size: 12px; line-height: 18px; color: var(--text-muted); background: var(--surface-muted); border-radius: var(--radius); padding: 0 8px; }
-.chip.onl { color: var(--brand-text); background: var(--brand-soft); }
-.right { flex-shrink: 0; display: flex; align-items: center; gap: 12px; }
-.prize-btn { font: 500 12px/18px var(--font-sans); color: var(--text-muted); background: transparent; border: 1px solid var(--border); border-radius: var(--radius-full); padding: 5px 12px; cursor: pointer; flex-shrink: 0; }
-.prize-btn:hover { border-color: var(--brand); color: var(--brand); }
-.reward { display: none; flex-basis: 100%; margin-top: 2px; padding: 10px 12px; background: var(--surface-muted); border-radius: var(--radius); font-size: 13px; line-height: 20px; color: var(--text); }
-.row.prize-open .reward { display: block; }
-.go { font: 500 12px/18px var(--font-sans); color: var(--brand-on); background: var(--brand); border: none; border-radius: var(--radius-full); padding: 6px 14px; cursor: pointer; text-decoration: none; display: inline-block; }
-.go:hover { opacity: .88; }
-.empty { text-align: center; color: var(--text-muted); padding: 48px 0; }
-.foot { margin-top: 16px; font-size: 12px; line-height: 18px; color: var(--text-muted); text-align: center; }
-
-@media (max-width: 640px) {
-  .row { flex-wrap: wrap; }
-  .date { width: 48px; }
-  .right { width: 100%; justify-content: flex-end; }
-}
-</style>
+<meta name="description" content="发现国内科技竞赛、黑客松、展会与开发者活动，按城市、报名状态和时间筛选。">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<a class="skip" href="#events">跳转到活动列表</a>
 <div class="wrap">
-  <div class="head">
-    <div>
-      <div class="title">科技活动日历</div>
-      <div class="sub" id="count" role="status" aria-live="polite">加载中…</div>
-    </div>
-    <label class="city-pick">📍 我的城市
-      <select id="city"><option value="">全部</option></select>
-    </label>
-  </div>
-  <div class="filters" role="search" aria-label="活动搜索与筛选">
-    <label class="search" for="search">搜索<input id="search" type="search" placeholder="名称、主办方、城市或地点" autocomplete="off"></label>
-    <label for="registration">报名状态 <select id="registration">
-      <option value="">全部</option><option value="available">可报名</option>
-      <option value="closing">即将截止</option><option value="closed">报名已结束</option>
-      <option value="unknown">待确认</option>
-    </select></label>
-    <label class="check"><input id="online-only" type="checkbox">仅线上</label>
-    <label class="check"><input id="hide-ended" type="checkbox">隐藏已结束活动</label>
-    <button id="reset-filters" class="plain-btn" type="button">清除筛选</button>
-  </div>
-  <div class="toolbar">
-    <div class="tags" id="tags"></div>
-    <div class="seg" id="sort">
-      <button data-sort="smart" class="on">综合</button>
-      <button data-sort="time">时间最近</button>
-      <button data-sort="ddl">截止临近</button>
-      <button data-sort="prize">奖金</button>
-    </div>
-  </div>
-  <div class="update" id="update-status" role="status" aria-live="polite">正在加载活动数据…</div>
-  <div class="list" id="list" aria-busy="true"></div>
-  <div class="foot" id="foot"></div>
+  <header class="masthead">
+    <div class="brand"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="16" rx="2"/><path d="M8 3v4m8-4v4M4 11h16m-11 4h2m3 0h1"/></svg></span>科技活动日历</div>
+    <span class="masthead-note">竞赛 / 黑客松 / 开发者活动</span>
+  </header>
+  <main>
+    <section class="hero" aria-labelledby="page-title">
+      <div>
+        <h1 id="page-title">科技活动日历</h1>
+      </div>
+      <label class="city-pick" for="city"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>城市优先<select id="city"><option value="">全部城市</option></select></label>
+    </section>
+    <section class="filter-panel" aria-label="查找活动">
+      <div role="search" aria-label="活动搜索与筛选">
+        <label class="search" for="search"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/></svg><span class="sr-only">搜索活动</span><input id="search" type="search" placeholder="搜索活动、主办方或城市" autocomplete="off"></label>
+        <div class="filters">
+          <label class="field" for="registration">报名状态<select id="registration">
+            <option value="">全部状态</option><option value="available">可报名</option>
+            <option value="closing">即将截止</option><option value="closed">报名已结束</option><option value="unknown">待确认</option>
+          </select></label>
+          <label class="check"><input id="online-only" type="checkbox">仅线上</label>
+          <label class="check"><input id="hide-ended" type="checkbox">隐藏已结束</label>
+          <button id="reset-filters" class="plain-btn" type="button">清除筛选</button>
+        </div>
+      </div>
+      <div class="toolbar">
+        <div class="tags" id="tags" role="group" aria-label="活动类型"></div>
+        <div class="seg" id="sort" role="group" aria-label="活动排序">
+          <button data-sort="smart" class="on" aria-pressed="true">综合</button>
+          <button data-sort="time" aria-pressed="false">时间最近</button>
+          <button data-sort="ddl" aria-pressed="false">截止临近</button>
+          <button data-sort="prize" aria-pressed="false">奖金</button>
+        </div>
+      </div>
+    </section>
+    <div class="update" id="update-status" role="status" aria-live="polite">正在加载活动数据…</div>
+    <section id="events" aria-labelledby="results-title">
+      <div class="results-head"><h2 id="results-title">活动一览</h2><div class="sub" id="count" role="status" aria-live="polite">加载中…</div></div>
+      <div class="list" id="list" aria-busy="true"></div>
+    </section>
+  </main>
+  <footer class="foot" id="foot"></footer>
 </div>
 
 <script src="event-status.js"></script>
@@ -168,7 +70,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
     var health = EventView.health(data);
     var box = document.getElementById('update-status');
     box.className = 'update' + (health.warning ? ' warn' : '');
-    box.innerHTML = '<p>' + escapeHtml(health.title) + '</p><div class="source-note">数据更新：'
+    box.innerHTML = '<p class="update-heading"><span class="status-dot" aria-hidden="true"></span>' + escapeHtml(health.title) + '</p><div class="source-note">数据更新：'
       + escapeHtml(data.updated_at || '未知') + '（北京时间） · 计划每日更新</div>'
       + (health.sources.length ? '<details><summary>查看来源更新情况</summary><ul>' + health.sources.map(function (s) {
         var label = { ok: '更新成功', cached: '更新失败，使用保留数据', failed: '更新失败，暂无保留数据' }[s.status] || '状态未知';
@@ -237,31 +139,30 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
       if (md[0] && +md[0] !== new Date().getFullYear()) {
         mLabel = ("'" + md[0].slice(2)) + '/' + mLabel;
       }
-      var badge = '<span class="badge ' + st + '">' + LABEL[st] + '</span>';
-      badge += '<span class="badge ' + (phases.registration === 'closed' || phases.registration === 'unknown' ? 'todo' : phases.registration) + '">' + REG_LABEL[phases.registration] + '</span>';
+      var badge = '<span class="badge ' + (phases.registration === 'closed' || phases.registration === 'unknown' ? 'todo' : phases.registration) + '">' + REG_LABEL[phases.registration] + '</span>';
       var ddlText = e.reg_deadline
-        ? (phases.registration === 'closing' ? '<span class="ddl-hot">报名截止 ' + e.reg_deadline + ' ⚠</span>' : '报名截止 ' + e.reg_deadline)
+        ? '<span class="' + (phases.registration === 'closing' ? 'ddl-hot' : '') + '">报名截止 ' + escapeHtml(e.reg_deadline) + '</span>'
         : '';
-      var chips = (e.category ? '<span class="chip cat">' + e.category + '</span>' : '');
+      var chips = (e.category ? '<span class="chip cat">' + escapeHtml(e.category) + '</span>' : '');
       if (e.online) chips += '<span class="chip onl">线上</span>';
       var prize = fmtPrize(e);
+      var destination = /^https?:\/\//i.test(e.url || '') ? e.url : '';
       html += '<div class="row' + (st === 'done' ? ' dim' : '') + '">'
         + '<div class="date"><div class="m">' + mLabel + '</div><div class="d">' + (md[2] ? +md[2] : '—') + '</div></div>'
-        + '<div class="main"><div class="name"><span class="n">' + e.name + '</span>' + badge + '</div>'
+        + '<div class="main"><div class="event-kicker">' + chips + '</div><h3 class="name">' + escapeHtml(e.name) + '</h3>'
         + '<div class="meta">'
-        + '<span>' + e.city + '</span>'
-        + (e.org ? '<span>·</span><span>' + e.org + '</span>' : '')
+        + '<span>' + escapeHtml(e.city) + '</span>'
+        + (e.org ? '<span aria-hidden="true">·</span><span>' + escapeHtml(e.org) + '</span>' : '')
         + (ddlText ? '<span>·</span><span>' + ddlText + '</span>' : '')
-        + chips
+        + '</div><div class="activity">' + LABEL[st] + '</div></div>'
+        + '<div class="right">' + badge + '<div class="actions">'
+        + (prize ? '<button class="prize-btn" type="button" aria-expanded="false">查看奖励</button>' : '')
+        + (destination ? '<a class="go" href="' + escapeHtml(destination) + '" target="_blank" rel="noopener noreferrer" aria-label="' + escapeHtml('查看活动：' + e.name + '（新窗口打开）') + '">查看活动<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>' : '')
         + '</div></div>'
-        + '<div class="right">'
-        + (prize ? '<button class="prize-btn" type="button">奖品</button>' : '')
-        + '<a class="go" href="' + e.url + '" target="_blank" rel="noopener">直达 ↗</a>'
-        + '</div>'
-        + (prize ? '<div class="reward">' + prize + '</div>' : '')
+        + (prize ? '<div class="reward">' + escapeHtml(prize) + '</div>' : '')
         + '</div>';
     });
-    document.getElementById('list').innerHTML = html || '<div class="empty">没有符合条件的活动<br>试试更换关键词或清除筛选</div>';
+    document.getElementById('list').innerHTML = html || '<div class="empty"><strong>没有找到符合条件的活动</strong>试试更换关键词，或点击上方「清除筛选」</div>';
     document.getElementById('count').textContent = '显示 ' + list.length + ' / ' + ALL.length + ' 场活动' + (state.city ? ' · ' + state.city + '优先（不限制城市）' : '');
   }
 
@@ -273,8 +174,8 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
     document.getElementById('tags').innerHTML = cats.map(function (t) {
       return '<button class="pill' + (t === state.cat ? ' on' : '') + '" aria-pressed="' + (t === state.cat) + '" data-cat="' + t + '">' + t + '</button>';
     }).join('');
-    document.getElementById('city').innerHTML = '<option value="">全部</option>' + Object.keys(cities).sort().map(function (c) {
-      return '<option value="' + c + '"' + (c === state.city ? ' selected' : '') + '>' + c + '</option>';
+    document.getElementById('city').innerHTML = '<option value="">全部城市</option>' + Object.keys(cities).sort().map(function (c) {
+      return '<option value="' + escapeHtml(c) + '"' + (c === state.city ? ' selected' : '') + '>' + escapeHtml(c) + '</option>';
     }).join('');
 
     document.getElementById('tags').addEventListener('click', function (ev) {
@@ -284,8 +185,8 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
     });
     document.getElementById('sort').addEventListener('click', function (ev) {
       var b = ev.target.closest('button'); if (!b) return;
-      this.querySelectorAll('button').forEach(function (p) { p.classList.remove('on'); });
-      b.classList.add('on'); state.sort = b.dataset.sort; render();
+      this.querySelectorAll('button').forEach(function (p) { p.classList.remove('on'); p.setAttribute('aria-pressed', 'false'); });
+      b.classList.add('on'); b.setAttribute('aria-pressed', 'true'); state.sort = b.dataset.sort; render();
     });
     document.getElementById('city').addEventListener('change', function () {
       state.city = this.value;
@@ -308,7 +209,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
     document.getElementById('list').addEventListener('click', function (ev) {
       var b = ev.target.closest('.prize-btn'); if (!b) return;
       var row = b.closest('.row');
-      if (row) row.classList.toggle('prize-open');
+      if (row) b.setAttribute('aria-expanded', String(row.classList.toggle('prize-open')));
     });
   }
 
