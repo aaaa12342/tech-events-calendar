@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-27 12:20",
+  "updated_at": "2026-10-28 12:50",
   "counts": {
-    "total": 188,
-    "scraped": 163,
+    "total": 186,
+    "scraped": 161,
     "manual": 8,
     "ranked": 20
   },
@@ -792,6 +792,23 @@
         "source": "ai-pick"
       },
       {
+        "id": "aipick-1bd657d148",
+        "name": "华硕 A+ 青年 Creator Lab",
+        "org": "华硕 A+ 青年",
+        "category": "黑客松",
+        "city": "中国",
+        "online": false,
+        "venue": "",
+        "start": "2026-11-21",
+        "end": "2026-11-22",
+        "reg_deadline": "2026-11-22",
+        "fee": "",
+        "prize": 0,
+        "prize_text": "",
+        "url": "https://events.waytoagi.com/events/%E5%8D%8E%E7%A1%95%20A%2B%20%E9%9D%92%E5%B9%B4%20Creator%20Lab-e_c2f243437e",
+        "source": "ai-pick"
+      },
+      {
         "id": "aipick-3120a3047c",
         "name": "第四届开放原子大赛—2026开源行业解决方案创新赛",
         "org": "WaytoAGI 社区",
@@ -1100,20 +1117,20 @@
         "source": "huodongxing"
       },
       {
-        "id": "hdx-15163d235c",
-        "name": "GAIC全球人工智能大会 · AI健康主题论坛",
+        "id": "hdx-019b4c9229",
+        "name": "GAIC 全球人工智能大会 · AI电商主题论坛",
         "org": "",
         "category": "展会",
         "city": "杭州",
         "online": false,
         "venue": "",
-        "start": "2026-11-18",
+        "start": "2026-11-19",
         "end": "",
         "reg_deadline": "",
         "fee": "",
         "prize": 0,
         "prize_text": "",
-        "url": "https://www.huodongxing.com/event/8875747617500",
+        "url": "https://www.huodongxing.com/event/8876222089200",
         "source": "huodongxing"
       },
       {
@@ -1134,23 +1151,6 @@
         "source": "huodongxing"
       },
       {
-        "id": "hdx-019b4c9229",
-        "name": "GAIC 全球人工智能大会 · AI电商主题论坛",
-        "org": "",
-        "category": "展会",
-        "city": "杭州",
-        "online": false,
-        "venue": "",
-        "start": "2026-11-19",
-        "end": "",
-        "reg_deadline": "",
-        "fee": "",
-        "prize": 0,
-        "prize_text": "",
-        "url": "https://www.huodongxing.com/event/8876222089200",
-        "source": "huodongxing"
-      },
-      {
         "id": "hdx-1917d9c4a7",
         "name": "全球人工智能大会 · AI教育主题论坛",
         "org": "",
@@ -1168,20 +1168,20 @@
         "source": "huodongxing"
       },
       {
-        "id": "hdx-5b8f723b10",
-        "name": "GAIC 全球人工智能大会・深圳峰会",
+        "id": "hdx-15163d235c",
+        "name": "GAIC全球人工智能大会 · AI健康主题论坛",
         "org": "",
         "category": "展会",
-        "city": "深圳",
+        "city": "杭州",
         "online": false,
         "venue": "",
-        "start": "2026-12-22",
+        "start": "2026-11-17",
         "end": "",
         "reg_deadline": "",
         "fee": "",
         "prize": 0,
         "prize_text": "",
-        "url": "https://www.huodongxing.com/event/6877887036000",
+        "url": "https://www.huodongxing.com/event/8875747617500",
         "source": "huodongxing"
       },
       {
@@ -1199,6 +1199,23 @@
         "prize": 0,
         "prize_text": "",
         "url": "https://www.huodongxing.com/event/4879198541300",
+        "source": "huodongxing"
+      },
+      {
+        "id": "hdx-5b8f723b10",
+        "name": "GAIC 全球人工智能大会・深圳峰会",
+        "org": "",
+        "category": "展会",
+        "city": "深圳",
+        "online": false,
+        "venue": "",
+        "start": "2026-12-22",
+        "end": "",
+        "reg_deadline": "",
+        "fee": "",
+        "prize": 0,
+        "prize_text": "",
+        "url": "https://www.huodongxing.com/event/6877887036000",
         "source": "huodongxing"
       },
       {
@@ -1458,7 +1475,7 @@
       },
       {
         "id": "hdx-2b03c4b790",
-        "name": "EIIC具身智能（机器人）产业大会——连接机器人产业链",
+        "name": "物理AI（机器人）产业大会——连接机器人产业链",
         "org": "",
         "category": "展会",
         "city": "杭州",
@@ -1729,23 +1746,6 @@
         "source": "huodongxing"
       },
       {
-        "id": "hdx-2dbee94822",
-        "name": "GEIA China 2026具身智能与人形机器人创新周【北京站12.9-12.11】",
-        "org": "",
-        "category": "会议",
-        "city": "北京",
-        "online": false,
-        "venue": "",
-        "start": "2026-12-09",
-        "end": "",
-        "reg_deadline": "",
-        "fee": "",
-        "prize": 0,
-        "prize_text": "",
-        "url": "https://www.huodongxing.com/event/5879941011000",
-        "source": "huodongxing"
-      },
-      {
         "id": "hdx-62d2e0f5e9",
         "name": "2026北京国际建筑科技博览会BAU China",
         "org": "",
@@ -1763,20 +1763,20 @@
         "source": "huodongxing"
       },
       {
-        "id": "hdx-4f2fb6a7af",
-        "name": "武汉企业家创新沙龙《科技成果转化的中国答案100个科技成果转化实战案例》科学家聚会",
+        "id": "hdx-e976600e22",
+        "name": "BAU China 2026北京建筑科技博览会",
         "org": "",
-        "category": "会议",
-        "city": "武汉",
+        "category": "展会",
+        "city": "北京",
         "online": false,
         "venue": "",
-        "start": "2026-12-27",
+        "start": "2026-10-28",
         "end": "",
         "reg_deadline": "",
         "fee": "",
         "prize": 0,
         "prize_text": "",
-        "url": "https://www.huodongxing.com/event/8862628312211",
+        "url": "https://www.huodongxing.com/event/9869843306300",
         "source": "huodongxing"
       },
       {
@@ -1794,6 +1794,23 @@
         "prize": 0,
         "prize_text": "",
         "url": "https://www.huodongxing.com/event/2882955626900",
+        "source": "huodongxing"
+      },
+      {
+        "id": "hdx-4ebef6c00c",
+        "name": "MEET2027智能未来大会｜年度影响力科技商业峰会",
+        "org": "",
+        "category": "展会",
+        "city": "北京",
+        "online": false,
+        "venue": "",
+        "start": "2026-12-09",
+        "end": "",
+        "reg_deadline": "",
+        "fee": "",
+        "prize": 0,
+        "prize_text": "",
+        "url": "https://www.huodongxing.com/event/4883534689300",
         "source": "huodongxing"
       },
       {
@@ -2001,23 +2018,6 @@
         "source": "huodongxing"
       },
       {
-        "id": "hdx-e976600e22",
-        "name": "BAU China 2026北京建筑科技博览会",
-        "org": "",
-        "category": "展会",
-        "city": "北京",
-        "online": false,
-        "venue": "",
-        "start": "2026-10-28",
-        "end": "",
-        "reg_deadline": "",
-        "fee": "",
-        "prize": 0,
-        "prize_text": "",
-        "url": "https://www.huodongxing.com/event/9869843306300",
-        "source": "huodongxing"
-      },
-      {
         "id": "hdx-3afd64118b",
         "name": "南昌企业家创新沙龙《科技成果转化的中国答案100个科技成果转化实战案例》科学家聚会",
         "org": "",
@@ -2052,6 +2052,23 @@
         "source": "huodongxing"
       },
       {
+        "id": "hdx-4f2fb6a7af",
+        "name": "武汉企业家创新沙龙《科技成果转化的中国答案100个科技成果转化实战案例》科学家聚会",
+        "org": "",
+        "category": "会议",
+        "city": "武汉",
+        "online": false,
+        "venue": "",
+        "start": "2026-12-27",
+        "end": "",
+        "reg_deadline": "",
+        "fee": "",
+        "prize": 0,
+        "prize_text": "",
+        "url": "https://www.huodongxing.com/event/8862628312211",
+        "source": "huodongxing"
+      },
+      {
         "id": "hdx-a3870b149e",
         "name": "新疆企业家创新沙龙《科技成果转化的中国答案100个科技成果转化实战案例》科学家聚会",
         "org": "",
@@ -2066,23 +2083,6 @@
         "prize": 0,
         "prize_text": "",
         "url": "https://www.huodongxing.com/event/3866585839000",
-        "source": "huodongxing"
-      },
-      {
-        "id": "hdx-5e8c265d63",
-        "name": "科学家聚会《科技成果转化的中国答案100个科技成果转化实战案例》企业家创新沙龙",
-        "org": "",
-        "category": "会议",
-        "city": "线上活动",
-        "online": true,
-        "venue": "",
-        "start": "2026-12-31",
-        "end": "",
-        "reg_deadline": "",
-        "fee": "",
-        "prize": 0,
-        "prize_text": "",
-        "url": "https://www.huodongxing.com/event/3864078426522",
         "source": "huodongxing"
       },
       {
@@ -2552,7 +2552,7 @@
       },
       {
         "id": "saikr-0617674185",
-        "name": "【倒计时4天】2026全国大学生机器人与算法大赛-知识竞答赛道",
+        "name": "【倒计时3天】2026全国大学生机器人与算法大赛-知识竞答赛道",
         "org": "",
         "category": "竞赛",
         "city": "线上",
@@ -2620,7 +2620,7 @@
       },
       {
         "id": "saikr-6b3c732f0a",
-        "name": "【本周开考！下周可领三学会盖章证书】计算机能力竞赛暨城市联赛—计算机素养赛道",
+        "name": "【本周开考！赛后三天可领证书】计算机能力竞赛暨城市联赛—计算机素养赛道",
         "org": "",
         "category": "竞赛",
         "city": "线上",
@@ -2753,40 +2753,6 @@
         "prize_text": "",
         "url": "https://m.saikr.com/vse/26itjsjsy",
         "source": "saikr"
-      },
-      {
-        "id": "saikr-6ca9a4ec0d",
-        "name": "2026 “AI生成世界”— AI图像图形技术创新大赛【AI生成视频赛道】",
-        "org": "",
-        "category": "竞赛",
-        "city": "线上",
-        "online": true,
-        "venue": "",
-        "start": "2026-08-31",
-        "end": "2026-10-31",
-        "reg_deadline": "2026-10-31",
-        "fee": "",
-        "prize": 0,
-        "prize_text": "",
-        "url": "https://m.saikr.com/vse/AIGC2602",
-        "source": "saikr"
-      },
-      {
-        "id": "saikr-e7ddf95ca2",
-        "name": "2026 “AI生成世界”— AI图像图形技术创新大赛【AI生成图像赛道】",
-        "org": "",
-        "category": "竞赛",
-        "city": "线上",
-        "online": true,
-        "venue": "",
-        "start": "2026-08-31",
-        "end": "2026-10-31",
-        "reg_deadline": "2026-10-31",
-        "fee": "",
-        "prize": 0,
-        "prize_text": "",
-        "url": "https://m.saikr.com/vse/AIGC2601",
-        "source": "saikr"
       }
     ],
     "rosedu": []
@@ -2794,38 +2760,38 @@
   "source_status": {
     "ai-pick": {
       "status": "ok",
-      "last_success_at": "2026-10-27 12:19",
-      "attempted_at": "2026-10-27 12:19",
-      "count": 58
+      "last_success_at": "2026-10-28 12:50",
+      "attempted_at": "2026-10-28 12:50",
+      "count": 59
     },
     "huodongxing": {
       "status": "ok",
-      "last_success_at": "2026-10-27 12:20",
-      "attempted_at": "2026-10-27 12:19",
-      "count": 70
+      "last_success_at": "2026-10-28 12:50",
+      "attempted_at": "2026-10-28 12:50",
+      "count": 69
     },
     "modelscope": {
       "status": "ok",
-      "last_success_at": "2026-10-27 12:20",
-      "attempted_at": "2026-10-27 12:19",
+      "last_success_at": "2026-10-28 12:50",
+      "attempted_at": "2026-10-28 12:50",
       "count": 10
     },
     "segmentfault": {
       "status": "ok",
-      "last_success_at": "2026-10-27 12:20",
-      "attempted_at": "2026-10-27 12:19",
+      "last_success_at": "2026-10-28 12:50",
+      "attempted_at": "2026-10-28 12:50",
       "count": 8
     },
     "saikr": {
       "status": "ok",
-      "last_success_at": "2026-10-27 12:20",
-      "attempted_at": "2026-10-27 12:19",
-      "count": 17
+      "last_success_at": "2026-10-28 12:50",
+      "attempted_at": "2026-10-28 12:50",
+      "count": 15
     },
     "rosedu": {
       "status": "ok",
-      "last_success_at": "2026-10-27 12:20",
-      "attempted_at": "2026-10-27 12:19",
+      "last_success_at": "2026-10-28 12:50",
+      "attempted_at": "2026-10-28 12:50",
       "count": 0
     }
   },
@@ -3500,40 +3466,6 @@
       "source": "ai-pick"
     },
     {
-      "id": "saikr-6ca9a4ec0d",
-      "name": "2026 “AI生成世界”— AI图像图形技术创新大赛【AI生成视频赛道】",
-      "org": "",
-      "category": "竞赛",
-      "city": "线上",
-      "online": true,
-      "venue": "",
-      "start": "2026-08-31",
-      "end": "2026-10-31",
-      "reg_deadline": "2026-10-31",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "",
-      "url": "https://m.saikr.com/vse/AIGC2602",
-      "source": "saikr"
-    },
-    {
-      "id": "saikr-e7ddf95ca2",
-      "name": "2026 “AI生成世界”— AI图像图形技术创新大赛【AI生成图像赛道】",
-      "org": "",
-      "category": "竞赛",
-      "city": "线上",
-      "online": true,
-      "venue": "",
-      "start": "2026-08-31",
-      "end": "2026-10-31",
-      "reg_deadline": "2026-10-31",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "",
-      "url": "https://m.saikr.com/vse/AIGC2601",
-      "source": "saikr"
-    },
-    {
       "id": "aipick-a45aa29dbc",
       "name": "TeleAgent 陕西高校 AI 创新大赛",
       "org": "中国电信",
@@ -4028,23 +3960,6 @@
       "source": "huodongxing"
     },
     {
-      "id": "hdx-1931444933",
-      "name": "科技企业全球化合作闭门会",
-      "org": "",
-      "category": "会议",
-      "city": "深圳",
-      "online": false,
-      "venue": "",
-      "start": "2026-10-28",
-      "end": "",
-      "reg_deadline": "",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "",
-      "url": "https://www.huodongxing.com/event/4882111135100",
-      "source": "huodongxing"
-    },
-    {
       "id": "hdx-e976600e22",
       "name": "BAU China 2026北京建筑科技博览会",
       "org": "",
@@ -4059,6 +3974,23 @@
       "prize": 0,
       "prize_text": "",
       "url": "https://www.huodongxing.com/event/9869843306300",
+      "source": "huodongxing"
+    },
+    {
+      "id": "hdx-1931444933",
+      "name": "科技企业全球化合作闭门会",
+      "org": "",
+      "category": "会议",
+      "city": "深圳",
+      "online": false,
+      "venue": "",
+      "start": "2026-10-28",
+      "end": "",
+      "reg_deadline": "",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://www.huodongxing.com/event/4882111135100",
       "source": "huodongxing"
     },
     {
@@ -4301,7 +4233,7 @@
     },
     {
       "id": "saikr-0617674185",
-      "name": "【倒计时4天】2026全国大学生机器人与算法大赛-知识竞答赛道",
+      "name": "【倒计时3天】2026全国大学生机器人与算法大赛-知识竞答赛道",
       "org": "",
       "category": "竞赛",
       "city": "线上",
@@ -4352,7 +4284,7 @@
     },
     {
       "id": "saikr-6b3c732f0a",
-      "name": "【本周开考！下周可领三学会盖章证书】计算机能力竞赛暨城市联赛—计算机素养赛道",
+      "name": "【本周开考！赛后三天可领证书】计算机能力竞赛暨城市联赛—计算机素养赛道",
       "org": "",
       "category": "竞赛",
       "city": "线上",
@@ -4692,7 +4624,7 @@
     },
     {
       "id": "hdx-2b03c4b790",
-      "name": "EIIC具身智能（机器人）产业大会——连接机器人产业链",
+      "name": "物理AI（机器人）产业大会——连接机器人产业链",
       "org": "",
       "category": "展会",
       "city": "杭州",
@@ -4715,7 +4647,7 @@
       "city": "杭州",
       "online": false,
       "venue": "",
-      "start": "2026-11-18",
+      "start": "2026-11-17",
       "end": "",
       "reg_deadline": "",
       "fee": "",
@@ -4742,23 +4674,6 @@
       "source": "huodongxing"
     },
     {
-      "id": "hdx-cdfc87aec5",
-      "name": "GAIC 全球人工智能大会项目路演（杭州站）",
-      "org": "",
-      "category": "展会",
-      "city": "杭州",
-      "online": false,
-      "venue": "",
-      "start": "2026-11-19",
-      "end": "",
-      "reg_deadline": "",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "",
-      "url": "https://www.huodongxing.com/event/7882503344100",
-      "source": "huodongxing"
-    },
-    {
       "id": "hdx-019b4c9229",
       "name": "GAIC 全球人工智能大会 · AI电商主题论坛",
       "org": "",
@@ -4773,6 +4688,23 @@
       "prize": 0,
       "prize_text": "",
       "url": "https://www.huodongxing.com/event/8876222089200",
+      "source": "huodongxing"
+    },
+    {
+      "id": "hdx-cdfc87aec5",
+      "name": "GAIC 全球人工智能大会项目路演（杭州站）",
+      "org": "",
+      "category": "展会",
+      "city": "杭州",
+      "online": false,
+      "venue": "",
+      "start": "2026-11-19",
+      "end": "",
+      "reg_deadline": "",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://www.huodongxing.com/event/7882503344100",
       "source": "huodongxing"
     },
     {
@@ -4859,6 +4791,23 @@
       "prize_text": "",
       "url": "https://www.huodongxing.com/event/3876474684900",
       "source": "huodongxing"
+    },
+    {
+      "id": "aipick-1bd657d148",
+      "name": "华硕 A+ 青年 Creator Lab",
+      "org": "华硕 A+ 青年",
+      "category": "黑客松",
+      "city": "中国",
+      "online": false,
+      "venue": "",
+      "start": "2026-11-21",
+      "end": "2026-11-22",
+      "reg_deadline": "2026-11-22",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://events.waytoagi.com/events/%E5%8D%8E%E7%A1%95%20A%2B%20%E9%9D%92%E5%B9%B4%20Creator%20Lab-e_c2f243437e",
+      "source": "ai-pick"
     },
     {
       "id": "hdx-4d192310dc",
@@ -5048,10 +4997,10 @@
       "source": "huodongxing"
     },
     {
-      "id": "hdx-2dbee94822",
-      "name": "GEIA China 2026具身智能与人形机器人创新周【北京站12.9-12.11】",
+      "id": "hdx-4ebef6c00c",
+      "name": "MEET2027智能未来大会｜年度影响力科技商业峰会",
       "org": "",
-      "category": "会议",
+      "category": "展会",
       "city": "北京",
       "online": false,
       "venue": "",
@@ -5061,7 +5010,7 @@
       "fee": "",
       "prize": 0,
       "prize_text": "",
-      "url": "https://www.huodongxing.com/event/5879941011000",
+      "url": "https://www.huodongxing.com/event/4883534689300",
       "source": "huodongxing"
     },
     {
@@ -5235,23 +5184,6 @@
       "source": "huodongxing"
     },
     {
-      "id": "hdx-4f2fb6a7af",
-      "name": "武汉企业家创新沙龙《科技成果转化的中国答案100个科技成果转化实战案例》科学家聚会",
-      "org": "",
-      "category": "会议",
-      "city": "武汉",
-      "online": false,
-      "venue": "",
-      "start": "2026-12-27",
-      "end": "",
-      "reg_deadline": "",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "",
-      "url": "https://www.huodongxing.com/event/8862628312211",
-      "source": "huodongxing"
-    },
-    {
       "id": "hdx-3afd64118b",
       "name": "南昌企业家创新沙龙《科技成果转化的中国答案100个科技成果转化实战案例》科学家聚会",
       "org": "",
@@ -5286,6 +5218,23 @@
       "source": "huodongxing"
     },
     {
+      "id": "hdx-4f2fb6a7af",
+      "name": "武汉企业家创新沙龙《科技成果转化的中国答案100个科技成果转化实战案例》科学家聚会",
+      "org": "",
+      "category": "会议",
+      "city": "武汉",
+      "online": false,
+      "venue": "",
+      "start": "2026-12-27",
+      "end": "",
+      "reg_deadline": "",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://www.huodongxing.com/event/8862628312211",
+      "source": "huodongxing"
+    },
+    {
       "id": "hdx-f9f8ed1b00",
       "name": "【下午场-机器人/AIoT硬件】AIZQ2026第二届粤港澳大湾区AI硬件千人嘉年华",
       "org": "",
@@ -5317,23 +5266,6 @@
       "prize": 0,
       "prize_text": "",
       "url": "https://www.huodongxing.com/event/7882377924511",
-      "source": "huodongxing"
-    },
-    {
-      "id": "hdx-5e8c265d63",
-      "name": "科学家聚会《科技成果转化的中国答案100个科技成果转化实战案例》企业家创新沙龙",
-      "org": "",
-      "category": "会议",
-      "city": "线上活动",
-      "online": true,
-      "venue": "",
-      "start": "2026-12-31",
-      "end": "",
-      "reg_deadline": "",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "",
-      "url": "https://www.huodongxing.com/event/3864078426522",
       "source": "huodongxing"
     },
     {
