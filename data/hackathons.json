@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-11-07 13:19",
+  "updated_at": "2026-11-08 13:16",
   "counts": {
-    "total": 164,
-    "scraped": 139,
+    "total": 165,
+    "scraped": 140,
     "manual": 8,
     "ranked": 20
   },
@@ -777,57 +777,6 @@
         "source": "huodongxing"
       },
       {
-        "id": "hdx-019b4c9229",
-        "name": "GAIC 全球人工智能大会 · AI电商主题论坛",
-        "org": "",
-        "category": "展会",
-        "city": "杭州",
-        "online": false,
-        "venue": "",
-        "start": "2026-11-19",
-        "end": "",
-        "reg_deadline": "",
-        "fee": "",
-        "prize": 0,
-        "prize_text": "",
-        "url": "https://www.huodongxing.com/event/8876222089200",
-        "source": "huodongxing"
-      },
-      {
-        "id": "hdx-2e2342c929",
-        "name": "GAIC 全球人工智能大会 · AI影视主题论坛",
-        "org": "",
-        "category": "展会",
-        "city": "杭州",
-        "online": false,
-        "venue": "",
-        "start": "2026-11-19",
-        "end": "",
-        "reg_deadline": "",
-        "fee": "",
-        "prize": 0,
-        "prize_text": "",
-        "url": "https://www.huodongxing.com/event/2876213307600",
-        "source": "huodongxing"
-      },
-      {
-        "id": "hdx-cdfc87aec5",
-        "name": "GAIC 全球人工智能大会项目路演（杭州站）",
-        "org": "",
-        "category": "展会",
-        "city": "杭州",
-        "online": false,
-        "venue": "",
-        "start": "2026-11-19",
-        "end": "",
-        "reg_deadline": "",
-        "fee": "",
-        "prize": 0,
-        "prize_text": "",
-        "url": "https://www.huodongxing.com/event/7882503344100",
-        "source": "huodongxing"
-      },
-      {
         "id": "hdx-15163d235c",
         "name": "GAIC全球人工智能大会 · AI健康主题论坛",
         "org": "",
@@ -842,6 +791,23 @@
         "prize": 0,
         "prize_text": "",
         "url": "https://www.huodongxing.com/event/8875747617500",
+        "source": "huodongxing"
+      },
+      {
+        "id": "hdx-019b4c9229",
+        "name": "GAIC 全球人工智能大会 · AI电商主题论坛",
+        "org": "",
+        "category": "展会",
+        "city": "杭州",
+        "online": false,
+        "venue": "",
+        "start": "2026-11-19",
+        "end": "",
+        "reg_deadline": "",
+        "fee": "",
+        "prize": 0,
+        "prize_text": "",
+        "url": "https://www.huodongxing.com/event/8876222089200",
         "source": "huodongxing"
       },
       {
@@ -862,20 +828,20 @@
         "source": "huodongxing"
       },
       {
-        "id": "hdx-d745c50081",
-        "name": "2026 WAIAC世界人工智能应用大会（展览门票）",
+        "id": "hdx-cdfc87aec5",
+        "name": "GAIC 全球人工智能大会项目路演（杭州站）",
         "org": "",
         "category": "展会",
-        "city": "深圳",
+        "city": "杭州",
         "online": false,
         "venue": "",
-        "start": "2026-11-26",
+        "start": "2026-11-19",
         "end": "",
         "reg_deadline": "",
         "fee": "",
         "prize": 0,
         "prize_text": "",
-        "url": "https://www.huodongxing.com/event/4879198541300",
+        "url": "https://www.huodongxing.com/event/7882503344100",
         "source": "huodongxing"
       },
       {
@@ -893,6 +859,40 @@
         "prize": 0,
         "prize_text": "",
         "url": "https://www.huodongxing.com/event/6877887036000",
+        "source": "huodongxing"
+      },
+      {
+        "id": "hdx-d745c50081",
+        "name": "2026 WAIAC世界人工智能应用大会（展览门票）",
+        "org": "",
+        "category": "展会",
+        "city": "深圳",
+        "online": false,
+        "venue": "",
+        "start": "2026-11-26",
+        "end": "",
+        "reg_deadline": "",
+        "fee": "",
+        "prize": 0,
+        "prize_text": "",
+        "url": "https://www.huodongxing.com/event/4879198541300",
+        "source": "huodongxing"
+      },
+      {
+        "id": "hdx-2e2342c929",
+        "name": "GAIC 全球人工智能大会 · AI影视主题论坛",
+        "org": "",
+        "category": "展会",
+        "city": "杭州",
+        "online": false,
+        "venue": "",
+        "start": "2026-11-19",
+        "end": "",
+        "reg_deadline": "",
+        "fee": "",
+        "prize": 0,
+        "prize_text": "",
+        "url": "https://www.huodongxing.com/event/2876213307600",
         "source": "huodongxing"
       },
       {
@@ -930,23 +930,6 @@
         "source": "huodongxing"
       },
       {
-        "id": "hdx-3816ccacfc",
-        "name": "2026 WAIAC世界人工智能应用大会（高端主论坛）门票",
-        "org": "",
-        "category": "展会",
-        "city": "深圳",
-        "online": false,
-        "venue": "",
-        "start": "2026-11-26",
-        "end": "",
-        "reg_deadline": "",
-        "fee": "",
-        "prize": 0,
-        "prize_text": "",
-        "url": "https://www.huodongxing.com/event/7881130127000",
-        "source": "huodongxing"
-      },
-      {
         "id": "hdx-e70d330fb5",
         "name": "中东人工智能博览会（MAIE）暨2026 XAIR 大会中东分会",
         "org": "",
@@ -978,6 +961,23 @@
         "prize": 0,
         "prize_text": "",
         "url": "https://www.huodongxing.com/event/7882085617000",
+        "source": "huodongxing"
+      },
+      {
+        "id": "hdx-3816ccacfc",
+        "name": "2026 WAIAC世界人工智能应用大会（高端主论坛）门票",
+        "org": "",
+        "category": "展会",
+        "city": "深圳",
+        "online": false,
+        "venue": "",
+        "start": "2026-11-26",
+        "end": "",
+        "reg_deadline": "",
+        "fee": "",
+        "prize": 0,
+        "prize_text": "",
+        "url": "https://www.huodongxing.com/event/7881130127000",
         "source": "huodongxing"
       },
       {
@@ -1202,23 +1202,6 @@
         "source": "huodongxing"
       },
       {
-        "id": "hdx-011a0e77f7",
-        "name": "Beni 多地形智能跟拍机器人 中国线下首发",
-        "org": "",
-        "category": "会议",
-        "city": "深圳",
-        "online": false,
-        "venue": "",
-        "start": "2026-11-14",
-        "end": "",
-        "reg_deadline": "",
-        "fee": "",
-        "prize": 0,
-        "prize_text": "",
-        "url": "https://www.huodongxing.com/event/4884677361300",
-        "source": "huodongxing"
-      },
-      {
         "id": "hdx-dd415e70be",
         "name": "Ai超级个体国际科技创业 智能机器人 资源",
         "org": "",
@@ -1233,6 +1216,23 @@
         "prize": 0,
         "prize_text": "",
         "url": "https://www.huodongxing.com/event/6884499950200",
+        "source": "huodongxing"
+      },
+      {
+        "id": "hdx-011a0e77f7",
+        "name": "Beni 多地形智能跟拍机器人 中国线下首发",
+        "org": "",
+        "category": "会议",
+        "city": "深圳",
+        "online": false,
+        "venue": "",
+        "start": "2026-11-14",
+        "end": "",
+        "reg_deadline": "",
+        "fee": "",
+        "prize": 0,
+        "prize_text": "",
+        "url": "https://www.huodongxing.com/event/4884677361300",
         "source": "huodongxing"
       },
       {
@@ -2177,23 +2177,6 @@
         "source": "saikr"
       },
       {
-        "id": "saikr-ca645bb208",
-        "name": "【倒计时2天】2026全国大学生机器人与算法大赛-科技英语（科普知识赛道）",
-        "org": "",
-        "category": "竞赛",
-        "city": "线上",
-        "online": true,
-        "venue": "",
-        "start": "2026-11-07",
-        "end": "2026-11-07",
-        "reg_deadline": "2026-11-07",
-        "fee": "",
-        "prize": 0,
-        "prize_text": "",
-        "url": "https://m.saikr.com/vse/26KJ",
-        "source": "saikr"
-      },
-      {
         "id": "saikr-62ed679f97",
         "name": "【本周末开赛！现金奖励赛】AI大模型创新应用挑战赛道",
         "org": "",
@@ -2379,6 +2362,40 @@
         "prize_text": "",
         "url": "https://m.saikr.com/vse/2026AIWEBKF",
         "source": "saikr"
+      },
+      {
+        "id": "saikr-a3dbdc8167",
+        "name": "2026第九届传智杯全国大学生数智创新与AI应用大赛——AI微信小程序开发挑战赛",
+        "org": "",
+        "category": "竞赛",
+        "city": "线上",
+        "online": true,
+        "venue": "",
+        "start": "",
+        "end": "",
+        "reg_deadline": "2026-11-19",
+        "fee": "",
+        "prize": 0,
+        "prize_text": "",
+        "url": "https://m.saikr.com/vse/2026AIWXXCX",
+        "source": "saikr"
+      },
+      {
+        "id": "saikr-51363b70c7",
+        "name": "2026第九届传智杯全国大学生数智创新与AI应用大赛——AI创新应用挑战赛",
+        "org": "",
+        "category": "竞赛",
+        "city": "线上",
+        "online": true,
+        "venue": "",
+        "start": "",
+        "end": "",
+        "reg_deadline": "2026-11-19",
+        "fee": "",
+        "prize": 0,
+        "prize_text": "",
+        "url": "https://m.saikr.com/vse/2026AICXYY",
+        "source": "saikr"
       }
     ],
     "rosedu": []
@@ -2386,38 +2403,38 @@
   "source_status": {
     "ai-pick": {
       "status": "ok",
-      "last_success_at": "2026-11-07 13:18",
-      "attempted_at": "2026-11-07 13:18",
+      "last_success_at": "2026-11-08 13:16",
+      "attempted_at": "2026-11-08 13:16",
       "count": 42
     },
     "huodongxing": {
       "status": "ok",
-      "last_success_at": "2026-11-07 13:19",
-      "attempted_at": "2026-11-07 13:18",
+      "last_success_at": "2026-11-08 13:16",
+      "attempted_at": "2026-11-08 13:16",
       "count": 62
     },
     "modelscope": {
       "status": "ok",
-      "last_success_at": "2026-11-07 13:19",
-      "attempted_at": "2026-11-07 13:18",
+      "last_success_at": "2026-11-08 13:16",
+      "attempted_at": "2026-11-08 13:16",
       "count": 10
     },
     "segmentfault": {
       "status": "ok",
-      "last_success_at": "2026-11-07 13:19",
-      "attempted_at": "2026-11-07 13:18",
+      "last_success_at": "2026-11-08 13:16",
+      "attempted_at": "2026-11-08 13:16",
       "count": 8
     },
     "saikr": {
       "status": "ok",
-      "last_success_at": "2026-11-07 13:19",
-      "attempted_at": "2026-11-07 13:18",
-      "count": 17
+      "last_success_at": "2026-11-08 13:16",
+      "attempted_at": "2026-11-08 13:16",
+      "count": 18
     },
     "rosedu": {
       "status": "ok",
-      "last_success_at": "2026-11-07 13:19",
-      "attempted_at": "2026-11-07 13:18",
+      "last_success_at": "2026-11-08 13:16",
+      "attempted_at": "2026-11-08 13:16",
       "count": 0
     }
   },
@@ -3348,23 +3365,6 @@
       "source": "segmentfault"
     },
     {
-      "id": "saikr-ca645bb208",
-      "name": "【倒计时2天】2026全国大学生机器人与算法大赛-科技英语（科普知识赛道）",
-      "org": "",
-      "category": "竞赛",
-      "city": "线上",
-      "online": true,
-      "venue": "",
-      "start": "2026-11-07",
-      "end": "2026-11-07",
-      "reg_deadline": "2026-11-07",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "",
-      "url": "https://m.saikr.com/vse/26KJ",
-      "source": "saikr"
-    },
-    {
       "id": "saikr-62ed679f97",
       "name": "【本周末开赛！现金奖励赛】AI大模型创新应用挑战赛道",
       "org": "",
@@ -3739,23 +3739,6 @@
       "source": "huodongxing"
     },
     {
-      "id": "hdx-2e2342c929",
-      "name": "GAIC 全球人工智能大会 · AI影视主题论坛",
-      "org": "",
-      "category": "展会",
-      "city": "杭州",
-      "online": false,
-      "venue": "",
-      "start": "2026-11-19",
-      "end": "",
-      "reg_deadline": "",
-      "fee": "",
-      "prize": 0,
-      "prize_text": "",
-      "url": "https://www.huodongxing.com/event/2876213307600",
-      "source": "huodongxing"
-    },
-    {
       "id": "hdx-cdfc87aec5",
       "name": "GAIC 全球人工智能大会项目路演（杭州站）",
       "org": "",
@@ -3770,6 +3753,23 @@
       "prize": 0,
       "prize_text": "",
       "url": "https://www.huodongxing.com/event/7882503344100",
+      "source": "huodongxing"
+    },
+    {
+      "id": "hdx-2e2342c929",
+      "name": "GAIC 全球人工智能大会 · AI影视主题论坛",
+      "org": "",
+      "category": "展会",
+      "city": "杭州",
+      "online": false,
+      "venue": "",
+      "start": "2026-11-19",
+      "end": "",
+      "reg_deadline": "",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://www.huodongxing.com/event/2876213307600",
       "source": "huodongxing"
     },
     {
@@ -5246,6 +5246,40 @@
       "prize": 0,
       "prize_text": "",
       "url": "https://m.saikr.com/vse/2026AIWEBKF",
+      "source": "saikr"
+    },
+    {
+      "id": "saikr-a3dbdc8167",
+      "name": "2026第九届传智杯全国大学生数智创新与AI应用大赛——AI微信小程序开发挑战赛",
+      "org": "",
+      "category": "竞赛",
+      "city": "线上",
+      "online": true,
+      "venue": "",
+      "start": "",
+      "end": "",
+      "reg_deadline": "2026-11-19",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://m.saikr.com/vse/2026AIWXXCX",
+      "source": "saikr"
+    },
+    {
+      "id": "saikr-51363b70c7",
+      "name": "2026第九届传智杯全国大学生数智创新与AI应用大赛——AI创新应用挑战赛",
+      "org": "",
+      "category": "竞赛",
+      "city": "线上",
+      "online": true,
+      "venue": "",
+      "start": "",
+      "end": "",
+      "reg_deadline": "2026-11-19",
+      "fee": "",
+      "prize": 0,
+      "prize_text": "",
+      "url": "https://m.saikr.com/vse/2026AICXYY",
       "source": "saikr"
     }
   ]
